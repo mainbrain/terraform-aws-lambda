@@ -4,7 +4,6 @@ variable "name" {
 }
 
 variable "path" {
-  default     = ""
   description = "The file or directory which should be part of of the package .zip file within the local filesystem."
 }
 
