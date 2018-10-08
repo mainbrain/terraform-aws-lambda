@@ -26,8 +26,7 @@ Terraform version 0.10.3 or newer is required for this module to work.
 | description | Description of what your Lambda Function does. | string | `` | no |
 | handler | The function entrypoint in your code. | string | - | yes |
 | name | Name to be used on all the resources as identifier. | string | - | yes |
-| package_directories | The directories which should be part of of the package .zip file within the local filesystem. | string | `<list>` | no |
-| package_files | The files which should be part of of the package .zip file within the local filesystem. | string | `<list>` | no |
+| package_include_paths | Additional files and directories which should be part of of the package .zip file within the local filesystem. | string | `<list>` | no |
 | package_path | The path to the function's deployment package within the local filesystem. | string | `` | no |
 | policy | IAM policy attached to the Lambda Function role. | string | `` | no |
 | policy_arn | The Amazon Resource Name (ARN) identifying your IAM policy attached to the Lambda Function role. | string | `` | no |

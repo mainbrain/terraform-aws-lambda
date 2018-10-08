@@ -1,0 +1,14 @@
+{
+    "name": "foo",
+    "description": "A test",
+    "homepage": "https://github.com/maitria/mock-api-server",
+    "license": "Blah",
+    "version": "0.4.6",
+    "dependencies": {
+      "uuid": "~3.3.2"
+    },
+    "devDependencies": {
+      "mocha": "~5.2.0"
+    }
+  }
+  

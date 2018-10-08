@@ -1,4 +1,10 @@
+# Terraform
 .terraform
 .terraform.tfstate*
 terraform.tfstate*
+
+# Python
+*.pyc
+
+# Misc
 .DS_Store

@@ -45,12 +45,7 @@ variable "package_path" {
   description = "The path to the function's deployment package within the local filesystem."
 }
 
-variable "package_files" {
+variable "package_include_paths" {
   default     = []
-  description = "The files which should be part of of the package .zip file within the local filesystem."
-}
-
-variable "package_directories" {
-  default     = []
-  description = "The directories which should be part of of the package .zip file within the local filesystem."
+  description = "Additional files and directories which should be part of of the package .zip file within the local filesystem."
 }

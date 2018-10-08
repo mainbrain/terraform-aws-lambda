@@ -1,10 +1,9 @@
 module "package" {
   source = "modules/package"
 
-  name        = "${var.name}"
-  path        = "${var.package_path}"
-  files       = ["${var.package_files}"]
-  directories = ["${var.package_directories}"]
+  name          = "${var.name}"
+  path          = "${var.package_path}"
+  include_paths = ["${var.package_include_paths}"]
 }
 
 module "function" {

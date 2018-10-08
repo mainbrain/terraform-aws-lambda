@@ -5,15 +5,15 @@ variable "name" {
 
 variable "path" {
   default     = ""
+  description = "The file or directory which should be part of of the package .zip file within the local filesystem."
+}
+
+variable "include_paths" {
+  default     = []
+  description = "Additional files and directories which should be part of of the package .zip file within the local filesystem."
+}
+
+variable "output_path" {
+  default     = ""
   description = "The path of the package .zip file within the local filesystem."
-}
-
-variable "files" {
-  default     = []
-  description = "The files which should be part of of the package .zip file within the local filesystem."
-}
-
-variable "directories" {
-  default     = []
-  description = "The directories which should be part of of the package .zip file within the local filesystem."
 }
