@@ -4,7 +4,7 @@ Terraform module which package & creates Lambda functions on AWS.
 ## Usage
 ```hcl
 module "lambda" {
-  source = "../../"
+  source = "howdio/lambda/aws"
 
   name    = "myfunction"
   runtime = "nodejs8.10"
