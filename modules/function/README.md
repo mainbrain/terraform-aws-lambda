@@ -12,6 +12,7 @@
 | policy | IAM policy attached to the Lambda Function role. | string | `` | no |
 | policy_arn | IAM policy ARN attached to the Lambda Function role. | string | `` | no |
 | role | This governs both who / what can invoke your Lambda Function, as well as what resources our Lambda Function has access to. See Lambda Permission Model for more details. | string | `` | no |
+| role_name | The name of the IAM role which will be created for the Lambda Function. | string | `` | no |
 | runtime | The function runtime to use. (nodejs, nodejs4.3, nodejs6.10, nodejs8.10, java8, python2.7, python3.6, dotnetcore1.0, dotnetcore2.0, dotnetcore2.1, nodejs4.3-edge, go1.x) | string | - | yes |
 | tags | A mapping of tags to assign to the object. | string | `<map>` | no |
 

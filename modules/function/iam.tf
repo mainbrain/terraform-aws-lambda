@@ -12,7 +12,7 @@ data "aws_iam_policy_document" "lambda_assume_role_policy_document" {
 
 resource "aws_iam_role" "lambda" {
   count              = "${var.role == "" ? 1 : 0}"
-  name               = "${var.name}"
+  name               = "${var.role_name != "" ? var.role_name : var.name}"
   assume_role_policy = "${data.aws_iam_policy_document.lambda_assume_role_policy_document.json}"
 }
 

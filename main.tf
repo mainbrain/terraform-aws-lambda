@@ -16,6 +16,7 @@ module "function" {
   runtime     = "${var.runtime}"
 
   role       = "${var.role}"
+  role_name  = "${var.role_name}"
   policy     = "${var.policy}"
   policy_arn = "${var.policy_arn}"
 

@@ -20,6 +20,11 @@ variable "role" {
   description = "This governs both who / what can invoke your Lambda Function, as well as what resources our Lambda Function has access to. See Lambda Permission Model for more details."
 }
 
+variable "role_name" {
+  default     = ""
+  description = "The name of the IAM role which will be created for the Lambda Function."
+}
+
 variable "policy" {
   default     = ""
   description = "IAM policy attached to the Lambda Function role."
