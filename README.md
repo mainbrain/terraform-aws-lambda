@@ -10,7 +10,7 @@ module "lambda" {
   runtime = "nodejs8.10"
   handler = "index.handler"
 
-  package_files = ["${path.module}/index.js"]
+  package_path = "${path.module}/index.js"
 }
 ```
 ## Terraform version
