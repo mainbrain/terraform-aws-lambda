@@ -106,6 +106,8 @@ class RequirementsCollector:
             return PythonRequirementsCollector(path)
         elif path_type == '.js':
             return NodeRequirementsCollector(path)
+        elif path_type == '':
+            return DirectoryRequirementsCollector(path)
         else:
             raise Exception("Unknown path type '{}'".format(path_type))
 
@@ -145,6 +147,13 @@ class NodeRequirementsCollector(RequirementsCollector):
             with open(full_path, 'wb') as f:
                 f.write(contents)
             os.utime(full_path, (mtime, mtime))
+
+class DirectoryRequirementsCollector(RequirementsCollector):
+    def _requirements_file(self):
+        return ''
+
+    def collect(self, sb):
+        pass
 
 class Packager:
     def __init__(self, input_values):

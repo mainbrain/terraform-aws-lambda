@@ -24,6 +24,10 @@ def do(input_values):
     }
 
 class TestPackager(unittest.TestCase):
+    def test_packages_a_python_directory(self):
+        result = do({"path": "test/python-simple"})
+        self.assertEquals(result["zip_contents"]["python-simple/foo.py"], "# Hello, Python!\n")
+
     def test_packages_a_python_script_with_no_dependencies(self):
         result = do({"path": "test/python-simple/foo.py"})
         self.assertEquals(result["zip_contents"]["foo.py"], "# Hello, Python!\n")
