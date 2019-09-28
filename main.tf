@@ -1,5 +1,5 @@
 module "package" {
-  source = "modules/package"
+  source = "./modules/package"
 
   name          = "${var.name}"
   path          = "${var.package_path}"
@@ -7,7 +7,7 @@ module "package" {
 }
 
 module "function" {
-  source = "modules/function"
+  source = "./modules/function"
 
   name        = "${var.name}"
   description = "${var.description}"
